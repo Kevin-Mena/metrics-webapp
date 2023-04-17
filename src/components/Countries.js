@@ -1,10 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Countries = ({
-  name, pop, src, alt,
+  id, name, pop, src, alt,
 }) => (
-  <div>
-    <h1>Countries</h1>
+  <div key={id}>
     <img src={src} alt={alt} />
     <p>
       Country :
@@ -16,5 +16,11 @@ const Countries = ({
     </p>
   </div>
 );
+Countries.propTypes = {
+  name: PropTypes.string.isRequired,
+  pop: PropTypes.number.isRequired,
+  src: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
+};
 
 export default Countries;

@@ -31,6 +31,15 @@ export const getCountries = createAsyncThunk(
 const countriesSlice = createSlice({
   name: 'countries',
   initialState,
+  reducers: {
+    searchCountry: (state, action) => {
+      const searchTerm = action.payload.toLowerCase();
+      const filteredList = initialState.countriesList.filter((country) => country.name.common.toLowerCase().includes(searchTerm));
+      state.countriesList = filteredList.length
+        ? filteredList
+        : initialState.countriesList;
+    },
+  },
   extraReducers: {
     [getCountries.pending]: (state) => ({ ...state, isLoading: true }),
 
@@ -43,5 +52,5 @@ const countriesSlice = createSlice({
     [getCountries.rejected]: (state) => ({ ...state, isLoading: false }),
   },
 });
-
+export const { searchCountry } = countriesSlice.actions;
 export default countriesSlice.reducer;

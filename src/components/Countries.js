@@ -17,6 +17,7 @@ const Countries = ({
   </div>
 );
 Countries.propTypes = {
+  id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   pop: PropTypes.number.isRequired,
   src: PropTypes.string.isRequired,

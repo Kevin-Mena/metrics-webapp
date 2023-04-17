@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
-import Countries from "./Countries";
-import { getCountries } from "../redux/countriesSlice";
-import { useDispatch, useSelector } from "react-redux";
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import Countries from './Countries';
+import { getCountries } from '../redux/countriesSlice';
 
 const CountriesList = () => {
   const dispatch = useDispatch();
@@ -11,17 +11,17 @@ const CountriesList = () => {
   }, [dispatch]);
 
   if (isLoading) {
-    return <div>Loading missions...Please Wait!</div>;
+    return <div>Loading data...</div>;
   }
   return (
     <div>
       {countriesList.map((country) => (
         <Countries
           key={country.ccn3}
-          name={country.common}
+          name={country.name.common}
           pop={country.population}
           src={country.svg}
-          alt={country.alt}
+          alt={country.flags.alt}
         />
       ))}
     </div>

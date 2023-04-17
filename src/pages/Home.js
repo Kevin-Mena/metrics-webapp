@@ -1,7 +1,12 @@
 import React from "react";
-
-const Home = () => {
-  return <div>home</div>;
+import CountriesList from "../components/CountriesList";
+const Home = ({}) => {
+  return (
+    <div>
+      <h1>Countries Lists</h1>
+      <CountriesList />
+    </div>
+  );
 };
 
 export default Home;

@@ -15,62 +15,71 @@ const DetailsList = () => {
   }, [dispatch]);
 
   if (isLoading) {
-    return <div>Loading data...Please wait!</div>;
+    return <div>Loading details...Please wait!</div>;
   }
 
   return (
-    <div key={country.flag}>
+    <div key={country.flag} className="details">
       <Link to="/">
         <FaRegArrowAltCircleLeft />
       </Link>
       <img src={country.flags.png} alt={country.flags.alt} />
       <p>
         Country :
-        {country.name.common}
+        <span className="desc">{country.name.common}</span>
       </p>
       <p>
         Capital :
-        {country.capital}
+        <span className="desc">{country.capital}</span>
       </p>
       <p>
         Population :
-        {country.population}
+        <span className="desc">
+          {' '}
+          {country.population}
+        </span>
       </p>
       <p>
         Status :
-        {country.status}
+        <span className="desc">{country.status}</span>
       </p>
       <p>
         Region :
-        {country.region}
+        <span className="desc">{country.region}</span>
       </p>
       <p>
         Sub-region :
-        {country.subregion}
+        <span className="desc">{country.subregion}</span>
       </p>
       <p>
         Area :
-        {country.area}
+        <span className="desc">{country.area}</span>
       </p>
       <p>
         Timezones :
-        {country.timezones}
+        <span className="desc">{country.timezones}</span>
       </p>
       <p>
         Continent :
-        {country.continents}
+        <span className="desc">{country.continents}</span>
       </p>
       <p>
         Flag description :
-        {country.flags.alt}
+        <span className="desc">
+          {' '}
+          {country.flags.alt}
+        </span>
       </p>
       <p>
         Start of Week :
-        {country.startOfWeek}
+        <span className="desc">{country.startOfWeek}</span>
       </p>
       <p>
         Car side :
-        {country.car.side}
+        <span className="desc">
+          {' '}
+          {country.car.side}
+        </span>
       </p>
     </div>
   );

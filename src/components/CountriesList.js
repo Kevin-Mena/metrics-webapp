@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom";
-import { FaRegArrowAltCircleRight } from "react-icons/fa";
-import { getCountries } from "../redux/countriesSlice";
+import React, { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
+import { FaRegArrowAltCircleRight } from 'react-icons/fa';
+import { getCountries } from '../redux/countriesSlice';
 
 const CountriesList = () => {
   const dispatch = useDispatch();
-  const [searchQuery, setSearchQuery] = useState("");
+  const [searchQuery, setSearchQuery] = useState('');
   const { countriesList, isLoading } = useSelector((store) => store.countries);
 
   useEffect(() => {
@@ -17,9 +17,7 @@ const CountriesList = () => {
     setSearchQuery(e.target.value);
   };
 
-  const filteredCountries = countriesList.filter(({ name }) =>
-    name.common.includes(searchQuery)
-  );
+  const filteredCountries = countriesList.filter(({ name }) => name.common.includes(searchQuery));
 
   if (isLoading) {
     return <h2>Loading data...Please wait!</h2>;
@@ -43,7 +41,10 @@ const CountriesList = () => {
           </Link>
           <img src={country.flags.png} alt={country.flags.alt} />
           <p>{country.name.common}</p>
-          <p>Population :{country.population}</p>
+          <p>
+            Population :
+            {country.population}
+          </p>
         </div>
       ))}
     </div>

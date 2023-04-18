@@ -53,7 +53,7 @@
 
 ## 🚀 Live Demo <a name="live-demo" ></a>
 
-- [Live Demo](https://world-countries-info-webapp.netlify.app/)
+- [Live Demo](https://worldcountries-info.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

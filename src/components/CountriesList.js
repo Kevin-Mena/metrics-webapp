@@ -24,7 +24,7 @@ const CountriesList = () => {
   }
 
   return (
-    <div>
+    <div className="container">
       <h1>WORLD COUNTRIES INFO</h1>
       <form>
         <input
@@ -35,15 +35,12 @@ const CountriesList = () => {
         />
       </form>
       {filteredCountries.map((country) => (
-        <div key={country.flag}>
+        <div key={country.flag} className="country">
           <Link to={`details/${country.flag}`}>
             <FaRegArrowAltCircleRight />
           </Link>
           <img src={country.flags.png} alt={country.flags.alt} />
-          <p>
-            Country :
-            {country.name.common}
-          </p>
+          <p>{country.name.common}</p>
           <p>
             Population :
             {country.population}

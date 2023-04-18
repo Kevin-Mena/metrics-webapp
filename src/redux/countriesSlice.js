@@ -31,7 +31,6 @@ export const getCountries = createAsyncThunk(
 const countriesSlice = createSlice({
   name: 'countries',
   initialState,
-
   extraReducers: {
     [getCountries.pending]: (state) => ({ ...state, isLoading: true }),
 

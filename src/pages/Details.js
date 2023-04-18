@@ -1,5 +1,10 @@
 import React from 'react';
+import DetailsList from '../components/DetailsList';
 
-const Details = () => <div>details</div>;
+const DetailsPage = () => (
+  <div>
+    <DetailsList />
+  </div>
+);
 
-export default Details;
+export default DetailsPage;

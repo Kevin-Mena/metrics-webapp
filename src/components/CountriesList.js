@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import Countries from './Countries';
+import { Link } from 'react-router-dom';
+import { FaRegArrowAltCircleRight } from 'react-icons/fa';
 import { getCountries } from '../redux/countriesSlice';
 
 const CountriesList = () => {
@@ -19,7 +20,7 @@ const CountriesList = () => {
   const filteredCountries = countriesList.filter(({ name }) => name.common.includes(searchQuery));
 
   if (isLoading) {
-    return <div>Loading data...</div>;
+    return <div>Loading data...Please wait!</div>;
   }
 
   return (
@@ -34,14 +35,20 @@ const CountriesList = () => {
         />
       </form>
       {filteredCountries.map((country) => (
-        <Countries
-          key={country.flag}
-          name={country.name.common}
-          pop={country.population}
-          src={country.flags.png}
-          alt={country.flags.alt}
-          id={country.flag}
-        />
+        <div key={country.flag}>
+          <Link to={`details/${country.flag}`}>
+            <FaRegArrowAltCircleRight />
+          </Link>
+          <img src={country.flags.png} alt={country.flags.alt} />
+          <p>
+            Country :
+            {country.name.common}
+          </p>
+          <p>
+            Population :
+            {country.population}
+          </p>
+        </div>
       ))}
     </div>
   );

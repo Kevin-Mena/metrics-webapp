@@ -1,0 +1,134 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DetailsList should match the snapshot 1`] = `
+<div
+  className="details"
+>
+  <a
+    href="/"
+    onClick={[Function]}
+  >
+    <svg
+      fill="currentColor"
+      height="1em"
+      stroke="currentColor"
+      strokeWidth="0"
+      style={
+        Object {
+          "color": undefined,
+        }
+      }
+      viewBox="0 0 512 512"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M8 256c0 137 111 248 248 248s248-111 248-248S393 8 256 8 8 119 8 256zm448 0c0 110.5-89.5 200-200 200S56 366.5 56 256 145.5 56 256 56s200 89.5 200 200zm-72-20v40c0 6.6-5.4 12-12 12H256v67c0 10.7-12.9 16-20.5 8.5l-99-99c-4.7-4.7-4.7-12.3 0-17l99-99c7.6-7.6 20.5-2.2 20.5 8.5v67h116c6.6 0 12 5.4 12 12z"
+      />
+    </svg>
+  </a>
+  <img
+    alt="Mock Flag Description"
+    src="mock.png"
+  />
+  <p>
+    Country :
+    <span
+      className="desc"
+    >
+      Mock Country
+    </span>
+  </p>
+  <p>
+    Capital :
+    <span
+      className="desc"
+    >
+      Mock Capital
+    </span>
+  </p>
+  <p>
+    Population :
+    <span
+      className="desc"
+    >
+       
+      10000000
+    </span>
+  </p>
+  <p>
+    Status :
+    <span
+      className="desc"
+    >
+      Mock Status
+    </span>
+  </p>
+  <p>
+    Region :
+    <span
+      className="desc"
+    >
+      Mock Region
+    </span>
+  </p>
+  <p>
+    Sub-region :
+    <span
+      className="desc"
+    >
+      Mock Subregion
+    </span>
+  </p>
+  <p>
+    Area :
+    <span
+      className="desc"
+    >
+      1000000
+    </span>
+  </p>
+  <p>
+    Timezones :
+    <span
+      className="desc"
+    >
+      Mock Timezones
+    </span>
+  </p>
+  <p>
+    Continent :
+    <span
+      className="desc"
+    >
+      Mock Continents
+    </span>
+  </p>
+  <p>
+    Flag description :
+    <span
+      className="desc"
+    >
+       
+      Mock Flag Description
+    </span>
+  </p>
+  <p>
+    Start of Week :
+    <span
+      className="desc"
+    >
+      Mock Start of Week
+    </span>
+  </p>
+  <p>
+    Car side :
+    <span
+      className="desc"
+    >
+       
+      Mock Car Side
+    </span>
+  </p>
+</div>
+`;

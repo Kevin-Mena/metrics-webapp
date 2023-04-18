@@ -57,6 +57,13 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🚀 Video Demo <a name="live-demo" ></a>
+
+- [Live Demo](https://www.loom.com/share/b7b4e6dcfa92478584d292d2e6aa1e12)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 ## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.

@@ -79,6 +79,10 @@ form input[type="search"] {
   color: hsl(205, 90%, 88%);
 }
 
+h2 {
+  color: #fff;
+}
+
 .country p:first-of-type {
   font-size: 24px;
   font-weight: bold;

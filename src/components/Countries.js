@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+// import BsArrowRightCircle from "react-icons";
 const Countries = ({
   id, name, pop, src, alt,
 }) => (
   <div key={id}>
+    {/* <BsArrowRightCircle /> */}
     <img src={src} alt={alt} />
     <p>
       Country :

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 import Countries from './Countries';
 import { getCountries } from '../redux/countriesSlice';
 
@@ -34,14 +35,15 @@ const CountriesList = () => {
         />
       </form>
       {filteredCountries.map((country) => (
-        <Countries
-          key={country.flag}
-          name={country.name.common}
-          pop={country.population}
-          src={country.flags.png}
-          alt={country.flags.alt}
-          id={country.flag}
-        />
+        <div key={country.flag}>
+          <Countries
+            name={country.name.common}
+            pop={country.population}
+            src={country.flags.png}
+            alt={country.flags.alt}
+            id={country.flag}
+          />
+        </div>
       ))}
     </div>
   );

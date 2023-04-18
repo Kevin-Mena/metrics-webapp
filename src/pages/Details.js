@@ -1,5 +1,16 @@
 import React from 'react';
+import { Link, useParams } from 'react-router-dom';
+import DetailsList from '../components/DetailsList';
 
-const Details = () => <div>details</div>;
+const DetailsPage = () => {
+  const { countryId } = useParams();
 
-export default Details;
+  return (
+    <div>
+      <DetailsList selectedCountry={countryId} />
+      <Link to="/">Home</Link>
+    </div>
+  );
+};
+
+export default DetailsPage;

@@ -2,14 +2,14 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 const initialState = {
   countriesList: [],
-  isLoading: true,
+  isLoading: false,
 };
 const API_URL = 'https://nationinfo.p.rapidapi.com/api/country/all/';
 
 const API_KEY = '582485296fmsh0738c4bec33958bp1ad7d4jsne0b6327721b6';
 
 export const getCountries = createAsyncThunk(
-  'countries/fetchCountries',
+  'countries/getCountries',
   async (thunkAPI) => {
     try {
       const response = await fetch(API_URL, {

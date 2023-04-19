@@ -1,6 +1,7 @@
-import React from "react";
-import { FaMicrophone } from "react-icons/fa";
-import { FiSettings } from "react-icons/fi";
+import React from 'react';
+import { FaMicrophone } from 'react-icons/fa';
+import { FiSettings } from 'react-icons/fi';
+
 const Navlink = () => (
   <>
     <nav className="navbar">
@@ -8,10 +9,13 @@ const Navlink = () => (
         <p>2023</p>
       </div>
       <div className="nav">
-        <p>PopStats</p>
+        <p className="info">
+          <span className="world">World</span>
+          <span className="pop">Pop</span>
+        </p>
       </div>
-      <div className="nav">
-        <FaMicrophone />
+      <div className="nav-last">
+        <FaMicrophone className="mic" style={{ marginRight: '10px' }} />
         <FiSettings />
       </div>
     </nav>

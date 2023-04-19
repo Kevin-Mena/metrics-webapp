@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins');
 *,
 ::after,
 ::before {
@@ -6,22 +6,22 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    'Open Sans',
-    'Helvetica Neue',
-    sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  color: #fff;
   background: hsl(209, 61%, 16%);
-  line-height: 1.5;
-  font-size: 0.875rem;
+  
+}
+@media  only screen and (max-width: 768px){
+  .container {
+      grid-template-columns: 1fr 1fr;
+    }
 }
 
 .container {
@@ -31,12 +31,18 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   max-height: max-content;
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ justify-content: center;
 }
 
-h1 {
+.info {
   font-size: 36px;
   margin-bottom: 20px;
   color: hsl(205, 90%, 88%);
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 form input[type="search"] {
@@ -51,8 +57,8 @@ form input[type="search"] {
 }
 
 .country {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   align-items: center;
   margin-bottom: 20px;
 }
@@ -62,11 +68,12 @@ form input[type="search"] {
   color: #fff;
   font-size: 24px;
   text-decoration: none;
+
 }
 
 .country img {
-  width: 100px;
-  height: 60px;
+  width: 150px;
+  height: 100px;
   object-fit: cover;
   margin-right: 20px;
   border-radius: 5px;
@@ -94,19 +101,9 @@ h2 {
 .country p:last-of-type {
   font-size: 18px;
   color: #7f8c8d;
+  font-weight: bold;
 }
 
-@media (min-width: 768px) {
-  .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  h1 {
-    display: block;
-    text-align: center;
-  }
-}
 
 .details {
   background-color: #fff;
@@ -132,8 +129,42 @@ h2 {
   font-size: 24px;
   text-decoration: none;
 }
+.nav-last {
+  padding: 1rem;
+
+  
+}
 
 .details .desc {
   text-transform: capitalize;
   color: hsl(211, 27%, 70%);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.3rem;
+  font-size: 26px;
+  color: #fff;
+  background: hsl(205, 77%, 27%);
+}
+
+.nav .info .world {
+  color: #00bfff;
+}
+
+.nav .info .pop {
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  h1 {
+    display: block;
+    text-align: center;
+  }
 }

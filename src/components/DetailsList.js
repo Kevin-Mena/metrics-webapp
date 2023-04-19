@@ -6,17 +6,13 @@ import { getCountries } from '../redux/countriesSlice';
 
 const DetailsList = () => {
   const dispatch = useDispatch();
-  const { countriesList, isLoading } = useSelector((store) => store.countries);
+  const { countriesList } = useSelector((store) => store.countries);
   const { countryId } = useParams();
   const country = countriesList.find((country) => country.flag === countryId);
 
   useEffect(() => {
     dispatch(getCountries());
   }, [dispatch]);
-
-  if (isLoading) {
-    return <h2>Loading details...Please wait!</h2>;
-  }
 
   return (
     <div key={country.flag} className="details">
@@ -63,13 +59,7 @@ const DetailsList = () => {
         Continent :
         <span className="desc">{country.continents}</span>
       </p>
-      <p>
-        Flag description :
-        <span className="desc">
-          {' '}
-          {country.flags.alt}
-        </span>
-      </p>
+
       <p>
         Start of Week :
         <span className="desc">{country.startOfWeek}</span>

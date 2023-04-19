@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins');
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  color: #fff;
+  background: hsl(209, 61%, 16%);
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 20px;
+  background: hsl(209, 61%, 16%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: max-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+}
+
+.info {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: hsl(205, 90%, 88%);
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+form input[type="search"] {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.country {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.country a {
+  margin-right: 20px;
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.country img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.details p {
+  line-height: 1.5;
+  font-size: 1.333rem;
+  margin-bottom: 20px;
+  color: hsl(205, 90%, 88%);
+}
+
+h2 {
+  color: #fff;
+}
+
+.country p:first-of-type {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  color: hsl(205, 100%, 96%);
+}
+
+.country p:last-of-type {
+  font-size: 18px;
+  color: #7f8c8d;
+  font-weight: bold;
+}
+
+.details {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  margin: 20px;
+  width: 100%;
+  background-image: url('./assets/images.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.details img {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 100%;
+}
+
+.details a {
+  margin-right: 20px;
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.nav-last {
+  padding: 1rem;
+}
+
+.details .desc {
+  text-transform: capitalize;
+  color: hsl(211, 27%, 70%);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.3rem;
+  font-size: 26px;
+  color: #fff;
+  background: hsl(205, 77%, 27%);
+}
+
+.nav .info .world {
+  color: #00bfff;
+}
+
+.nav .info .pop {
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  h1 {
+    display: block;
+    text-align: center;
+  }
+}

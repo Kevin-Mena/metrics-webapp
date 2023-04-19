@@ -1,4 +1,4 @@
-# Metrics webapp
+# World Countries Info
 
 <a name="readme-top"></a>
 
@@ -33,9 +33,9 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-# 📖 [Metrics webapp] <a name="about-project"></a>
+# 📖 [World Countries Info] <a name="about-project"></a>
 
-\*\*[Metrics webapp] a mobile web application that checks a list of metrics (numeric values) from an API.It consist of two pages: the first page shows a list of items that could be filtered by some parameters and the second page shows the item details.
+\*\*[World Countries Info] is a mobile web application that checks a list of country population from an API and displays them on the web page.It consist of two pages: the first page shows a list of countries that could be filtered by some parameters and the second page shows the country details.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -53,9 +53,14 @@
 
 ## 🚀 Live Demo <a name="live-demo" ></a>
 
-- [Coming soon...]
+- [Live Demo](https://worldcountries-info.netlify.app/)
+
+
+
+- [Video Demo](https://www.loom.com/share/b7b4e6dcfa92478584d292d2e6aa1e12)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -74,7 +79,7 @@ Example commands:
 
 ```sh
   cd <desired folder to contain project>
-  git clonehttps://github.com/Kevin-Mena/metrics-webapp.git
+  git https://github.com/Kevin-Mena/world-countries-info.git
 
 ```
 
@@ -101,7 +106,7 @@ npm start
 - On the terminal
 
 ```sh
-npm install --save-dev jest-environment-jsdom
+
 npm test
 ```
 
@@ -120,7 +125,7 @@ npm test
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **[Backend features]**
-- [ ] **[Better UI design]**
+- [ ] **[Databases]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -128,7 +133,7 @@ npm test
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Kevin-Mena/metrics-webapp/issues).
+Feel free to check the [issues page](https://github.com/Kevin-Mena/world-countries-info/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -140,7 +145,7 @@ If you like this project,give it a ⭐️!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-The design has been inspired by Behance
+✅ Thanks to Creative Commons for the [original design](<https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)>)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

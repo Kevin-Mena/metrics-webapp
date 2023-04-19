@@ -56,9 +56,6 @@
 - [Live Demo](https://worldcountries-info.netlify.app/)
 
 
-
-- [Video Demo](https://www.loom.com/share/b7b4e6dcfa92478584d292d2e6aa1e12)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins');
+
 *,
 ::after,
 ::before {
@@ -6,6 +7,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   box-sizing: border-box;
   margin: 0;
@@ -16,12 +18,12 @@ body {
   height: 100vh;
   color: #fff;
   background: hsl(209, 61%, 16%);
-  
 }
-@media  only screen and (max-width: 768px){
+
+@media only screen and (max-width: 768px) {
   .container {
-      grid-template-columns: 1fr 1fr;
-    }
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .container {
@@ -31,9 +33,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   max-height: max-content;
- display: grid;
- grid-template-columns: 1fr 1fr;
- justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
 }
 
 .info {
@@ -68,7 +70,6 @@ form input[type="search"] {
   color: #fff;
   font-size: 24px;
   text-decoration: none;
-
 }
 
 .country img {
@@ -104,7 +105,6 @@ h2 {
   font-weight: bold;
 }
 
-
 .details {
   background-color: #fff;
   border-radius: 5px;
@@ -129,16 +129,16 @@ h2 {
   font-size: 24px;
   text-decoration: none;
 }
+
 .nav-last {
   padding: 1rem;
-
-  
 }
 
 .details .desc {
   text-transform: capitalize;
   color: hsl(211, 27%, 70%);
 }
+
 .navbar {
   display: flex;
   justify-content: space-between;

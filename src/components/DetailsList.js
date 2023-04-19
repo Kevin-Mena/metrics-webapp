@@ -13,7 +13,6 @@ const DetailsList = () => {
   useEffect(() => {
     dispatch(getCountries());
   }, [dispatch]);
-
   return (
     <div key={country.flag} className="details">
       <Link to="/">
